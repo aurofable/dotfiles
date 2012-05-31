@@ -7,3 +7,4 @@ dotDir=`pwd`
 cd
 ln -s $dotDir/.bashrc .bashrc
 ln -s $dotDir/.vimrc .vimrc
+ln -s $dotDir/.profile .profile
