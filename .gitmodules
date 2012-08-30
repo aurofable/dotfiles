@@ -1,0 +1,3 @@
+[submodule "mac-cfg/color/iTerm2-Color-Schemes"]
+	path = mac-cfg/color/iTerm2-Color-Schemes
+	url = git://github.com/mbadolato/iTerm2-Color-Schemes.git
