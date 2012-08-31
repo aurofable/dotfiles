@@ -15,6 +15,8 @@ export HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+unset HISTSIZE
+unset HISTFILESIZE
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -86,11 +88,19 @@ alias connx='ssh -X jtchun@unix.andrew.cmu.edu'
 alias connsx='ssh -X jtchun@shark.ics.cs.cmu.edu'
 alias connelsx='ssh -X jtchun@ece007.ece.cmu.edu'
 alias ebrc='vim ~/.bashrc'
+alias evrc='vim ~/.vimrc'
+alias egit='vim ~/.gitconfig'
 alias dbox='cd /home/user/Desktop/Dropbox'
 alias 123s='cd /home/user/Desktop/Dropbox/15123/rough/sandbox'
 alias compiled='gcc -ansi -pedantic -W -Wall -Wextra -Werror -g -o0'
 alias compile='gcc -ansi -pedantic -W -Wall -Wextra -Werror -g -O2'
 alias regnome='sudo /etc/init.d/gdm restart'
+
+# FOR LINKEDIN
+alias note='vim ~/internDoc/notes.txt'
+alias android='/Users/jchun/Documents/android-sdk-macosx/tools/android'
+alias ideas='vim ~/internDoc/ideas.txt'
+alias mamp='open /Applications/MAMP/MAMP.app'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -117,9 +127,15 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 #Set the path
-export PATH=${PATH}:/home/james/Android/android-sdk-linux_86/tools
+#export PATH=${PATH}:/home/james/Android/android-sdk-linux_86/tools
 #source /opt/ros/electric/setup.bash
-
+export PATH=${PATH}:/Users/jchun/Documents/android-sdk-macosx
+export PATH=${PATH}:/Users/jchun/Documents/android-sdk-macosx/tools
+export PATH=${PATH}:/Users/jchun/Documents/android-sdk-macosx/platform-tools
+export PATH=${PATH}:/usr/local/linkedin/bin
+export PATH=${PATH}:/Users/jchun/Documents/lein
+export PATH=${PATH}:/Users/jchun/Documents/android-ndk-r8
+export PATH=${PATH}:/Users/jchun/Documents/play-2.0.3-RC2
 # Setting the ROS Paths
 #export ROS_PACKAGE_PATH=/home/james/ros
 #export ROS_PACKAGE_PATH=/opt/ros/electric/stacks:/home/james/ros:/home/james/ros/art/utexas-art-ros-pkg-read-only

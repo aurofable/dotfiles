@@ -20,3 +20,20 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+# Setting PATH env for iPhone Dev Tools
+# For LINKEDIN
+export PATH=/usr/local/bin:$HOME/Developer/devtools/utilities:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=$HOME/Developer:$PATH
+export PATH=/usr/local/smlnj-110.74/bin:$PATH
+export PATH=/bin:$PATH
+
+##
+# Your previous /Users/jchun/.profile file was backed up as /Users/jchun/.profile.macports-saved_2012-06-14_at_14:28:21
+##
+
+# MacPorts Installer addition on 2012-06-14_at_14:28:21: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+export PATH=$PATH:~/Downloads/play-2.0
