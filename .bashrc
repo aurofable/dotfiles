@@ -141,6 +141,8 @@ export PATH=${PATH}:/Users/jchun/Documents/play-2.0.3-RC2
 #export ROS_PACKAGE_PATH=/opt/ros/electric/stacks:/home/james/ros:/home/james/ros/art/utexas-art-ros-pkg-read-only
 #/opt/ros/stacks:/opt/ros-tutorials/ros_pkg_tutorials:/opt/ros-tutorials/ros_tutorials:/home/james/ros
 #export CVSROOT=jtchun@unix.andrew.cmu.edu:/afs/andrew.cmu.edu/scs/ri/Project-2011/simulation/cvsroot
+export PATH=/opt/subversion/bin:$PATH
+export PATH=/home/james/.local/bin:$PATH
 
 #ART_RUN=$(rospack find art_run)
 #if [ "$ART_RUN" != "" ] && [ -d $ART_RUN/bin ]
