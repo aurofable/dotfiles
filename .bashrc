@@ -129,6 +129,8 @@ fi
 #Set the path
 #export PATH=${PATH}:/home/james/Android/android-sdk-linux_86/tools
 #source /opt/ros/electric/setup.bash
+export PATH=/usr/local/share/python:${PATH}
+export PATH=/usr/local/bin:${PATH}
 export PATH=${PATH}:/Users/jchun/Documents/android-sdk-macosx
 export PATH=${PATH}:/Users/jchun/Documents/android-sdk-macosx/tools
 export PATH=${PATH}:/Users/jchun/Documents/android-sdk-macosx/platform-tools
