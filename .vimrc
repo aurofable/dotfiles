@@ -96,3 +96,7 @@ set smartindent
 set smartcase
 set showmatch
 
+" Additional vim syntax stuff
+au BufRead,BufNewFile *.thrift set filetype=thrift
+au! Syntax thrift source ~/.vim/thrift.vim
+

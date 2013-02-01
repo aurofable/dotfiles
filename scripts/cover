@@ -1,0 +1,17 @@
+# Bash function for generating coverage
+# Requires cobertura maven plugin
+
+function cover() {
+  currDir=`pwd`
+  if [ $# -gt 0 ]
+  then
+    echo "Generating coverage for project $2"
+    cd $2
+  fi
+
+  mvn clean
+  mvn cobertura:cobertura
+  cd target/site/cobertura
+  open index.html
+  cd $currDir
+}

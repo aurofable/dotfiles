@@ -1,0 +1,17 @@
+# Bash function for generating javadocs
+# Uses maven
+
+function jdoc() {
+  currDir=`pwd`
+  if [ $# -gt 0 ]
+  then
+    echo "Generating jdoc for project $2"
+    cd $2
+  fi
+
+  mvn clean
+  mvn javadoc:javadoc
+  cd target/site/apidocs
+  open index.html
+  cd $currDir
+}

@@ -146,6 +146,10 @@ export PATH=${PATH}:/Users/jchun/Documents/play-2.0.3-RC2
 export PATH=/opt/subversion/bin:$PATH
 export PATH=/home/james/.local/bin:$PATH
 
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+
+for f in ~/dotfiles/scripts/*; do source $f; done
+
 #ART_RUN=$(rospack find art_run)
 #if [ "$ART_RUN" != "" ] && [ -d $ART_RUN/bin ]
 #    then export PATH=$ART_RUN/bin:$PATH
